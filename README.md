@@ -4,7 +4,11 @@ This project contains Python implementation for GK01 algorithm (from M. Greenwal
 
 ## Testing of space complexity
 
-To prove that worst space complexity of GK01 algorithm is $O(\frac{1}{\epsilon}\log(\epsilon N)$, I ran algorithm with different values of $\epsilon$ over the same dataset (numbers from 0 to 99999) 200 times, but each time it was shuffled randomly. Each time I saved the max value of the worst number of elements in the list of tuples. As a result, I got the following distributions of maximum length of list of tuples:
+To prove that worst space complexity of GK01 algorithm is $O(\frac{1}{\epsilon}\log(\epsilon N)$, I compare plots of logarithm function and actual length of array of tuples for $epsilon$ = 0.01 and numbers from 1 to 29999 (randomly shuffled):
+
+![](logarithm.png)
+
+Additionally, I ran algorithm with different values of $\epsilon$ over the same dataset (numbers from 0 to 99999) 200 times, but each time it was shuffled randomly. Each time I saved the max value of the worst number of elements in the list of tuples. As a result, I got the following distributions of maximum length of list of tuples:
 ![](max_length.jpg)
 
 ## References
